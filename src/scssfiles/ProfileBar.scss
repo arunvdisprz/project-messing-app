@@ -1,0 +1,71 @@
+#root {
+  $fordisplay: none;
+}
+$color_white: rgb(255, 255, 255);
+$background-color_white: rgb(255, 255, 255);
+$background-color_brown: #801f56;
+
+.Profilebar {
+	margin-top: 82px;
+	width: 450px;
+	border: 1px solid gray;
+	background-color: $background-color_white;
+	overflow-y: scroll;
+	height: calc(100vh);
+	display: block;
+	z-index: 100;
+}
+.profilebar__profileIcon {
+	margin: 0%;
+	margin: 30px 30px 20px 30px;
+}
+.Avatar {
+	vertical-align: middle;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+}
+.name {
+	margin: 0px 10px;
+	font-weight: bolder;
+}
+.profilebarsublist {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 40px;
+	&:hover {
+		background-color: $background-color_brown;
+		color: $color_white;
+		cursor: pointer;
+	}
+}
+.profilebarsublist__number {
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+}
+.seemore {
+	margin: 10px 30px;
+	width: 80%;
+	padding: 12px 5px;
+	border-radius: 5px;
+	border-width: 0ch;
+	&:hover {
+		background-color: $background-color_brown;
+		color: $color_white;
+		cursor: pointer;
+	}
+}
+.recentlyadded {
+	margin: 30px 30px 20px 30px;
+}
+@media only screen and (max-width: 800px) {
+	.Profilebar {
+		display: var(--fordisplay);
+		position: absolute;
+		right: 0%;
+		width: 60%;
+		margin-top: 66px;
+	}
+}
+

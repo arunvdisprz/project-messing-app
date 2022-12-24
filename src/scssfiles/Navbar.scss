@@ -1,0 +1,54 @@
+$background-color_white: rgb(255, 255, 255);
+
+.navbar__main {
+	position: fixed;
+	width: 100%;
+	box-shadow: 0 5px 5px #888888;
+	border: 1px solid gray;
+}
+.navbar {
+	padding: 30px 30px;
+	background-color: $background-color_white;
+	display: flex;
+	justify-content: space-between;
+	.navbar__leftarrow {
+		height: 20px;
+		width: auto;
+	}
+	.navbar__dashboard {
+		margin: 0px 0px 0px 40px;
+		font-weight: lighter;
+	}
+	.navbar__rightarrow {
+		margin: 0px 10px;
+	}
+	.navbar__socialfeed {
+		font-weight: bolder;
+	}
+}
+.navbar__left {
+	display: flex;
+}
+.navbar__right {
+	display: none;
+}
+.navbar__handburger--button {
+	background-color: $background-color_white;
+	border: 0px;
+}
+.navbar__handburger {
+	width: 20px;
+	height: auto;
+}
+@media only screen and (max-width: 800px) {
+	.navbar {
+		padding: 20px 30px;
+	}
+	.navbar__right {
+		display: flex;
+	}
+	.navbar__handburger {
+		width: 20px;
+		height: auto;
+	}
+}

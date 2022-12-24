@@ -1,0 +1,263 @@
+$color_blue: blue;
+$color_lightblue: #143fcd;
+$color_white: rgb(255, 255, 255);
+$background-color_white1: #e2e1e8;
+$background-color_white: rgb(255, 255, 255);
+$background-color_4: #000000;
+$border-color_black: black;
+$border-color_white: #ffffff;
+$border-color_blue: #143fcd;
+
+.feedbar {
+	width: 100%;
+	background-color: $background-color_white1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 82px;
+	overflow-y: scroll;
+	height: calc(100vh);
+}
+::-webkit-scrollbar {
+	width: 0%;
+}
+.feedbar__inputbar {
+	border: 0px solid rgb(255, 255, 255);
+	border-radius: 15px;
+	background-color: $background-color_white;
+	width: 60%;
+	height: fit-content;
+	padding: 20px;
+	margin: 20px;
+}
+.feedbar__inputbar__logobar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.feedbar__avatar {
+	vertical-align: middle;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	border: 2px solid transparent;
+	background: linear-gradient(to bottom, rgb(255, 0, 106), rgb(136, 0, 255)) border-box;
+}
+.feedbar__input {
+	border: 0px solid #e2e1e8;
+	border-radius: 10px;
+	background-color: $background-color_white1;
+	width: 70%;
+	height: fit-content;
+	padding: 10px 20px;
+	margin-left: 10px;
+	resize: none;
+}
+.sendButton {
+	margin: 20px;
+	cursor: pointer;
+}
+.feedbar__icontext {
+	margin-left: 60px;
+	display: flex;
+	justify-content: space-between;
+}
+.feedbar__icon {
+	cursor: pointer;
+	margin-right: 5px;
+	border-color: $border-color_black;
+}
+.feedbar__addattachment {
+	cursor: pointer;
+	margin-top: 10px;
+	display: flex;
+}
+.feedbar__addattachment__but {
+	cursor: pointer;
+	border: 0px;
+	background-color: $background-color_white;
+	&:hover {
+		color: $color_blue;
+	}
+}
+.feedbar__input__attachment {
+	margin: 20px;
+	display: flex;
+	justify-content: center;
+}
+.feedbar__input__attachment--input {
+	display: inline;
+	cursor: pointer;
+}
+.feedbar__input__camera {
+	margin: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.feedbar__input__camera--captured {
+	width: 50%;
+	height: auto;
+}
+.feedbar__input__camera--button {
+	border-width: 0px;
+	padding: 8px;
+	border-radius: 30px;
+	width: 25%;
+	border-color: $border-color_white;
+	margin-bottom: 10px;
+	cursor: pointer;
+	&:hover {
+		background: #eaebff;
+		border-color: $border-color_blue;
+		color: $color_lightblue;
+	}
+}
+.feedbar__input__mic {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 10%;
+}
+.feedbar__input__mic--status {
+	height: auto;
+	margin: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: $color_lightblue;
+}
+.feedbar__input__mic--audio {
+	height: auto;
+	margin: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.feedbar__input__mic--start {
+	border-width: 0ch;
+	padding: 8px;
+	border-radius: 30px;
+	width: 20%;
+	cursor: pointer;
+	&:hover {
+		background: #eaebff;
+		border-color: $border-color_blue;
+		color: $color_lightblue;
+	}
+}
+.feedbar__input__mic--stop {
+	border-width: 0ch;
+	padding: 8px;
+	border-radius: 30px;
+	width: 20%;
+	cursor: pointer;
+	&:hover {
+		background: #eaebff;
+		border-color: $border-color_blue;
+		color: $color_lightblue;
+	}
+}
+.feedbar__input__mic--done {
+	border-width: 0ch;
+	padding: 8px;
+	border-radius: 30px;
+	width: 20%;
+	cursor: pointer;
+	&:hover {
+		background: #eaebff;
+		border-color: $border-color_blue;
+		color: $color_lightblue;
+	}
+}
+.feedbar__post {
+	background-color: $background-color_white;
+	border: 0px solid rgb(255, 255, 255);
+	border-radius: 15px;
+	width: 60%;
+	height: fit-content;
+	padding: 20px;
+	margin: 10px;
+}
+.feedbar__post__avatarbar {
+	display: flex;
+}
+.feedbar__post__avatar {
+	vertical-align: middle;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	border: 2px solid transparent;
+	background: linear-gradient(to bottom, rgb(255, 0, 106), rgb(136, 0, 255)) border-box;
+}
+.feedbar__post__avatarbar__right {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+.feedbar__post__avatarbar__right--name {
+	margin: 0px 10px;
+	font-size: 14px;
+	font-weight: bold;
+}
+.feedbar__post__avatarbar__right--role {
+	margin: 0px 10px;
+	font-size: 14px;
+}
+.feedbar__post__avatarbar__right--date {
+	margin: 0px 10px;
+	font-size: 14px;
+}
+.feedbar__post__avatarbar__ellipse {
+	cursor: pointer;
+	border-width: 0ch;
+	background-color: $background-color_white;
+	margin-right: 40px;
+}
+.feedbar__post__avatarbar__delete {
+	cursor: pointer;
+	color: $color_white;
+	background-color: $background-color_4;
+	border-radius: 5px;
+}
+.feedbar__post__content {
+	margin: 20px;
+}
+.feedbar__post__content__message {
+	margin: 0%;
+}
+.feedbar__post__content__filecap {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 10px;
+}
+.feedbar__post__content__file {
+	width: 100%;
+	overflow-y: hidden;
+}
+.feedbar__post__content__cap {
+	width: 40%;
+}
+.feedbar__post__content__audio {
+	margin: 10px;
+}
+@media only screen and (max-width: 800px) {
+	.feedbar {
+		margin-top: 66px;
+	}
+	.feedbar__inputbar {
+		width: 80%;
+	}
+	.feedbar__input {
+		width: 60%;
+	}
+	.feedbar__post {
+		width: 80%;
+	}
+	.feedbar__input__camera--button {
+		width: 30%;
+	}
+	.feedbar__input__mic--audio {
+		margin-left: 10%;
+	}
+}
